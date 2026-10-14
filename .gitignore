@@ -30,3 +30,7 @@ override.tf.json
 *.log
 .DS_Store
 Thumbs.db
+
+# Terraform saved execution plans
+tfplan
+*.tfplan
