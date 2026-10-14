@@ -1,0 +1,32 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keep Terraform dependency locks tracked
+!.terraform.lock.hcl
+
+# Azure and credentials
+.azure/
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+
+# Local files
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db
