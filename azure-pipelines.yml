@@ -1,0 +1,17 @@
+trigger:
+  - main
+
+pool:
+  name: astronomy-shop-agents
+  demands:
+    - Agent.Name -equals astro-linux-agent-01
+
+steps:
+  - bash: |
+      echo "Astronomy Shop - Azure DevOps"
+      echo "Testing our self-hosted agent"
+      echo "Agent: $(Agent.Name)"
+      echo "Operating System: $(Agent.OS)"
+      whoami
+      uname -a
+    displayName: 'Verify self-hosted Linux agent'
